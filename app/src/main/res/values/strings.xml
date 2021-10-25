@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Telegram Activity</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Telegram Activity: Instructions</string>
+    <string name="second_fragment_label">Telegram Activity: Initial Ratings</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    //Instructions
+    <string name="activity_instructions">This exercise gives you more practice at simplifying information. You are given a passage of text. Your task is to simplify this into a telegram of 12 words. Remember, a telegram uses the fewest words possible to get the message across. You will be rated on how well you can do this. Remember to keep it simple, but the message must be clear.</string>
+
+    //Ratings
+    <string name="rating_instructions">Before you begin, rate how well you predict you will do this exercise by selecting the number that applies.</string>
+    <string name="five_rating">5 - I will have no problems in completing the whole task correctly.</string>
+    <string name="four_rating">4 - I will have a few mild problems but I will complete over &#190; of the task correctly.</string>
+    <string name="three_rating">3 - I will not complete the whole task but will do over &#189; of it correctly.</string>
+    <string name="two_rating">2 - I will have some problems so that I can complete only a small part of the task.</string>
+    <string name="one_rating">1 - I will have major problems with this task.</string>
+
+    //Activity
+    <string name="getready_header">Telegram Activity: Get Ready</string>
+    <string name="activity_header">Telegram Activity: Exercise</string>
+    <string name="telegram_instructions">Simplify the following passage into a telegram. The telegram can be only 12 words long.</string>
+    <string name="short_instructions">Simplify the passage to 12 words:</string>
+    <string name="telegram_text">Today I woke up feeling rather ill and feverish. My chest is very congested and all my muscles ache. I simply could not get out of bed. The doctor came immediately and concluded that I have contracted the flu. He insists that I stay in bed for a few days to avoid complications. But even without his urgings I am not able to do much with myself. So I am stuck. You must come immediately. I cannot complete these most important deals without your help.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
