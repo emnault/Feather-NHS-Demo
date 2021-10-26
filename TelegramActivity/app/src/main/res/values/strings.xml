@@ -12,6 +12,7 @@
 
     //Ratings
     <string name="rating_instructions">Before you begin, rate how well you predict you will do this exercise by selecting the number that applies.</string>
+    //Circling --> selecting
     <string name="five_rating">5 - I will have no problems in completing the whole task correctly.</string>
     <string name="four_rating">4 - I will have a few mild problems but I will complete over &#190; of the task correctly.</string>
     <string name="three_rating">3 - I will not complete the whole task but will do over &#189; of it correctly.</string>
@@ -26,4 +27,19 @@
     <string name="telegram_text">Today I woke up feeling rather ill and feverish. My chest is very congested and all my muscles ache. I simply could not get out of bed. The doctor came immediately and concluded that I have contracted the flu. He insists that I stay in bed for a few days to avoid complications. But even without his urgings I am not able to do much with myself. So I am stuck. You must come immediately. I cannot complete these most important deals without your help.</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    //Post Ratings
+    <string name="post_ratings_header">Telegram Activity: Post Ratings</string>
+    <string name="post_ratings_instructions">Now that you have completed this exercise, rate how well you actually did by selecting the number that applies</string> //After --> Now that, circling --> selecting
+    <string name="post_five_rating">5 - I had no problems in completing the whole task correctly.</string>
+    <string name="post_four_rating">4 - I had a few mild problems but I completed over &#190; of the task correctly.</string>
+    <string name="post_three_rating">3 - I did not complete the whole task but did over &#189; of it correctly.</string>
+    <string name="post_two_rating">2 - I had some problems so that I completed only a small part of the task.</string>
+    <string name="post_one_rating">1 - I had major problems with this task.</string>
+
+    //Feedback
+    <string name="feedback_header">Telegram Activity: Feedback</string>
+    <string name="completion">You have completed 58 minutes of activities today, that is 8 more minutes than yesterday. You have 11 minutes left until your 60 minute goal!</string>
+
+
 </resources>

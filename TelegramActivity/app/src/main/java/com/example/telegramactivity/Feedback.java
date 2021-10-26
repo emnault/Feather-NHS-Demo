@@ -11,13 +11,13 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.telegramactivity.databinding.FragmentActivityBinding;
-import com.example.telegramactivity.databinding.FragmentGetReadyBinding;
+import com.example.telegramactivity.databinding.FragmentFeedbackBinding;
 
 /**
  * A simple {@link Fragment} subclass.
  * create an instance of this fragment.
  */
-public class ActivityFragment extends Fragment {
+public class Feedback extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -28,7 +28,7 @@ public class ActivityFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public ActivityFragment() {
+    public Feedback() {
         // Required empty public constructor
     }
 
@@ -38,11 +38,11 @@ public class ActivityFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment ActivityFragment.
+     * @return A new instance of fragment Feedback.
      */
     // TODO: Rename and change types and number of parameters
-//    public static ActivityFragment newInstance(String param1, String param2) {
-//        ActivityFragment fragment = new ActivityFragment();
+//    public static Feedback newInstance(String param1, String param2) {
+//        Feedback fragment = new Feedback();
 //        Bundle args = new Bundle();
 //        args.putString(ARG_PARAM1, param1);
 //        args.putString(ARG_PARAM2, param2);
@@ -63,32 +63,32 @@ public class ActivityFragment extends Fragment {
 //    public View onCreateView(LayoutInflater inflater, ViewGroup container,
 //                             Bundle savedInstanceState) {
 //        // Inflate the layout for this fragment
-//        return inflater.inflate(R.layout.fragment_activity, container, false);
+//        return inflater.inflate(R.layout.fragment_feedback, container, false);
 //    }
-    private FragmentActivityBinding binding;
+    private FragmentFeedbackBinding binding;
 
     @Override
     public View onCreateView(
             LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState
     ) {
-        binding = FragmentActivityBinding.inflate(inflater, container, false);
+        binding = FragmentFeedbackBinding.inflate(inflater, container, false);
         return binding.getRoot();
 
     }
 
-    public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-
-        binding.button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                NavHostFragment.findNavController(ActivityFragment.this)
-                        .navigate(R.id.action_ActivityFragment_to_PostRatings);
-            }
-        });
-    }
+//    public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
+//        super.onViewCreated(view, savedInstanceState);
+//
+//        binding.button.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//                NavHostFragment.findNavController(ActivityFragment.this)
+//                        .navigate(R.id.action_ActivityFragment_to_PostRatings);
+//            }
+//        });
+//    }
 
     @Override
     public void onDestroyView() {

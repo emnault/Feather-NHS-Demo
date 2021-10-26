@@ -37,5 +37,28 @@
         android:id="@+id/ActivityFragment"
         android:name="com.example.telegramactivity.ActivityFragment"
         android:label="@string/activity_header"
-        tools:layout="@layout/fragment_activity"/>
+        tools:layout="@layout/fragment_activity">
+        <action
+            android:id="@+id/action_ActivityFragment_to_PostRatings"
+            app:destination="@id/PostRatings" />
+    </fragment>
+    <fragment
+        android:id="@+id/PostRatings"
+        android:name="com.example.telegramactivity.PostRatings"
+        android:label="@string/post_ratings_header"
+        tools:layout="@layout/fragment_post_ratings">
+        <action
+            android:id="@+id/action_PostRatings_to_Feedback"
+            app:destination="@id/Feedback" />
+    </fragment>
+    <fragment
+        android:id="@+id/Feedback"
+        android:name="com.example.telegramactivity.Feedback"
+        android:label="@string/feedback_header"
+        tools:layout="@layout/fragment_feedback">
+<!--        <action-->
+<!--            android:id="@+id/action_ActivityFragment_to_PostRatings"-->
+<!--            app:destination="@id/PostRatings" />-->
+    </fragment>
+
 </navigation>
