@@ -39,7 +39,7 @@
 
     //Feedback
     <string name="feedback_header">Telegram Activity: Feedback</string>
-    <string name="completion">You have completed 58 minutes of activities today, that is 8 more minutes than yesterday. You have 11 minutes left until your 60 minute goal!</string>
+    <string name="completion">You have completed 49 minutes of activities today, that is 8 more minutes than yesterday. You have 11 minutes left until your 60 minute goal!</string>
 
 
 </resources>

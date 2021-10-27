@@ -6,6 +6,8 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
+import android.text.Editable;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -83,7 +85,8 @@ public class ActivityFragment extends Fragment {
         binding.button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Editable input = binding.editTextTextMultiLine.getText();
+//                int numWords = input.length();
                 NavHostFragment.findNavController(ActivityFragment.this)
                         .navigate(R.id.action_ActivityFragment_to_PostRatings);
             }
