@@ -11,6 +11,8 @@ import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.telegramactivity.databinding.FragmentSecondBinding;
 
+import java.net.Socket;
+
 public class SecondFragment extends Fragment {
 
     private FragmentSecondBinding binding;
@@ -32,7 +34,17 @@ public class SecondFragment extends Fragment {
         binding.buttonSecond.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //Opens socket which tells Nao to speak
+                new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        try{
+                            Socket s=new Socket("192.168.1.243", 65432);
+                            s.close();
+                        }catch(Exception e){System.out.println(e);}
+                    }
 
+                }).start();
                 NavHostFragment.findNavController(SecondFragment.this)
                         .navigate(R.id.action_SecondFragment_to_GetReady);
             }

@@ -20,7 +20,7 @@
 
     <Button
         android:id="@+id/button_first"
-        android:layout_width="96dp"
+        android:layout_width="95dp"
         android:layout_height="65dp"
         android:text="@string/next"
         app:layout_constraintBottom_toBottomOf="parent"

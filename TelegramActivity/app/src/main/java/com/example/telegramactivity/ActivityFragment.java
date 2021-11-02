@@ -15,6 +15,8 @@ import android.view.ViewGroup;
 import com.example.telegramactivity.databinding.FragmentActivityBinding;
 import com.example.telegramactivity.databinding.FragmentGetReadyBinding;
 
+import java.net.Socket;
+
 /**
  * A simple {@link Fragment} subclass.
  * create an instance of this fragment.
@@ -87,6 +89,17 @@ public class ActivityFragment extends Fragment {
             public void onClick(View view) {
                 Editable input = binding.editTextTextMultiLine.getText();
 //                int numWords = input.length();
+                //Opens socket which tells Nao to speak
+                new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        try{
+                            Socket s=new Socket("192.168.1.243", 65432);
+                            s.close();
+                        }catch(Exception e){System.out.println(e);}
+                    }
+
+                }).start();
                 NavHostFragment.findNavController(ActivityFragment.this)
                         .navigate(R.id.action_ActivityFragment_to_PostRatings);
             }

@@ -18,6 +18,8 @@ import com.example.telegramactivity.databinding.ActivityMainBinding;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import java.net.Socket;
+
 public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
@@ -26,6 +28,18 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+//        //Opens socket which tells Nao to speak
+//        new Thread(new Runnable() {
+//            @Override
+//            public void run() {
+//                try{
+//                    Socket s=new Socket("192.168.1.243", 65432);
+//                    s.close();
+//                }catch(Exception e){System.out.println(e);}
+//            }
+//
+//        }).start();
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
@@ -61,6 +75,17 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onSupportNavigateUp() {
+        //Opens socket which tells Nao to speak
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try{
+                    Socket s=new Socket("192.168.1.243", 65432);
+                    s.close();
+                }catch(Exception e){System.out.println(e);}
+            }
+
+        }).start();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         return NavigationUI.navigateUp(navController, appBarConfiguration)
                 || super.onSupportNavigateUp();

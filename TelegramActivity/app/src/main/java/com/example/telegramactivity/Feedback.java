@@ -13,6 +13,8 @@ import android.view.ViewGroup;
 import com.example.telegramactivity.databinding.FragmentActivityBinding;
 import com.example.telegramactivity.databinding.FragmentFeedbackBinding;
 
+import java.net.Socket;
+
 /**
  * A simple {@link Fragment} subclass.
  * create an instance of this fragment.
@@ -72,6 +74,17 @@ public class Feedback extends Fragment {
             LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState
     ) {
+        //Opens socket which tells Nao to speak
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try{
+                    Socket s=new Socket("192.168.1.243", 65432);
+                    s.close();
+                }catch(Exception e){System.out.println(e);}
+            }
+
+        }).start();
         binding = FragmentFeedbackBinding.inflate(inflater, container, false);
         return binding.getRoot();
 

@@ -38,7 +38,17 @@ public class FirstFragment extends Fragment {
             LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState
     ) {
+        //Opens socket which tells Nao to speak
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try{
+                    Socket s=new Socket("192.168.1.243", 65432);
+                    s.close();
+                }catch(Exception e){System.out.println(e);}
+            }
 
+        }).start();
         binding = FragmentFirstBinding.inflate(inflater, container, false);
         return binding.getRoot();
 
@@ -51,7 +61,7 @@ public class FirstFragment extends Fragment {
         binding.buttonFirst.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                //Opens socket which tells Nao to speak
                 new Thread(new Runnable() {
                     @Override
                     public void run() {

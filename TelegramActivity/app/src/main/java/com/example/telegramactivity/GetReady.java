@@ -13,6 +13,8 @@ import android.view.ViewGroup;
 import com.example.telegramactivity.databinding.FragmentGetReadyBinding;
 import com.example.telegramactivity.databinding.FragmentSecondBinding;
 
+import java.net.Socket;
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the } factory method to
@@ -86,7 +88,17 @@ public class GetReady extends Fragment {
         binding.button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //Opens socket which tells Nao to speak
+                new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        try{
+                            Socket s=new Socket("192.168.1.243", 65432);
+                            s.close();
+                        }catch(Exception e){System.out.println(e);}
+                    }
 
+                }).start();
                 NavHostFragment.findNavController(GetReady.this)
                         .navigate(R.id.action_GetReady_to_ActivityFragment);
             }

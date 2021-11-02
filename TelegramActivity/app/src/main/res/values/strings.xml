@@ -30,7 +30,7 @@
 
     //Post Ratings
     <string name="post_ratings_header">Telegram Activity: Post Ratings</string>
-    <string name="post_ratings_instructions">Now that you have completed this exercise, rate how well you actually did by selecting the number that applies</string> //After --> Now that, circling --> selecting
+    <string name="post_ratings_instructions">Now that you have completed this exercise, rate how well you actually did by selecting the number that applies.</string> //After --> Now that, circling --> selecting
     <string name="post_five_rating">5 - I had no problems in completing the whole task correctly.</string>
     <string name="post_four_rating">4 - I had a few mild problems but I completed over &#190; of the task correctly.</string>
     <string name="post_three_rating">3 - I did not complete the whole task but did over &#189; of it correctly.</string>

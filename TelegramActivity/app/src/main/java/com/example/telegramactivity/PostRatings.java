@@ -13,6 +13,8 @@ import android.view.ViewGroup;
 import com.example.telegramactivity.databinding.FragmentActivityBinding;
 import com.example.telegramactivity.databinding.FragmentPostRatingsBinding;
 
+import java.net.Socket;
+
 /**
  * A simple {@link Fragment} subclass.
  * create an instance of this fragment.
@@ -73,6 +75,8 @@ public class PostRatings extends Fragment {
             LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState
     ) {
+
+
         binding = FragmentPostRatingsBinding.inflate(inflater, container, false);
         return binding.getRoot();
 
@@ -84,7 +88,17 @@ public class PostRatings extends Fragment {
         binding.button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //Opens socket which tells Nao to speak
+                new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        try{
+                            Socket s=new Socket("192.168.1.243", 65432);
+                            s.close();
+                        }catch(Exception e){System.out.println(e);}
+                    }
 
+                }).start();
                 NavHostFragment.findNavController(PostRatings.this)
                         .navigate(R.id.action_PostRatings_to_Feedback);
             }
