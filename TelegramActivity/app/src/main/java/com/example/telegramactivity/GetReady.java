@@ -93,7 +93,7 @@ public class GetReady extends Fragment {
                     @Override
                     public void run() {
                         try{
-                            Socket s=new Socket("192.168.1.243", 65432);
+                            Socket s=new Socket("192.168.1.197", 65432);
                             s.close();
                         }catch(Exception e){System.out.println(e);}
                     }

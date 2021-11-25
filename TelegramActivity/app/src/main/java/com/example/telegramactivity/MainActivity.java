@@ -80,9 +80,17 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 try{
-                    Socket s=new Socket("192.168.1.243", 65432);
+                    System.out.println("Mac socket 1");
+                    Socket s=new Socket("192.168.1.197", 65432);
                     s.close();
-                }catch(Exception e){System.out.println(e);}
+                    System.out.println("Mac socket 2");
+                }catch(Exception e){System.out.println("Mac " + e);}
+//                try{
+//                    System.out.println("Miro socket 1");
+//                    Socket s=new Socket("192.168.1.197", 65432);
+//                    s.close();
+//                    System.out.println("Miro socket 2");
+//                }catch(Exception e){System.out.println("MiroLaptop " + e);}
             }
 
         }).start();
