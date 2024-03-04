@@ -10,39 +10,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa23544f-3a0a-4f25-9e57-af79dcb9f79e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../FeatherDemo/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FeatherDemo/app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FeatherDemo/app/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FeatherDemo/app/src/androidTest/java/com/example/featherdemo/ExampleInstrumentedTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FeatherDemo/app/src/main/java/com/example/featherdemo/ui/theme/Theme.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FeatherDemo/app/src/main/java/com/example/featherdemo/ui/theme/Type.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FeatherDemo/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FeatherDemo/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FeatherDemo/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FeatherDemo/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FeatherDemo/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FeatherDemo/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FeatherDemo/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FeatherDemo/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FeatherDemo/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FeatherDemo/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FeatherDemo/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FeatherDemo/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FeatherDemo/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FeatherDemo/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FeatherDemo/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FeatherDemo/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FeatherDemo/app/src/main/res/xml/backup_rules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FeatherDemo/app/src/main/res/xml/data_extraction_rules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FeatherDemo/app/src/test/java/com/example/featherdemo/ExampleUnitTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FeatherDemo/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FeatherDemo/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FeatherDemo/gradle/libs.versions.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FeatherDemo/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FeatherDemo/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FeatherDemo/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FeatherDemo/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FeatherDemo/settings.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FeatherDemo/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FeatherDemo/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FeatherDemo/.idea/deploymentTargetDropDown.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FeatherDemo/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FeatherDemo/.idea/kotlinc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FeatherDemo/.idea/migrations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FeatherDemo/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FeatherDemo/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FeatherDemo/app/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FeatherDemo/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FeatherDemo/app/src/main/java/com/example/featherdemo/MainActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FeatherDemo/app/src/main/java/com/example/featherdemo/ui/theme/Color.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FeatherDemo/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +33,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[/Users/emmy/.android/avd/Pixel_C_API_24.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[192.168.2.115:5555]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
