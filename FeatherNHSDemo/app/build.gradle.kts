@@ -5,7 +5,7 @@ plugins {
 
 // Define the Libs object directly in build.gradle.kts
 object Libs {
-    const val robotemiSdk = "com.robotemi:sdk:0.10.81"
+    const val robotemiSdk = "com.robotemi:sdk:1.131.4"
     // Add other dependencies as needed
 }
 

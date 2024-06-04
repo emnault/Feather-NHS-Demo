@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A4C2C6"
+    tools:context=".SleepActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="How much sleep did you have last night?"
+        android:textColor="#000000"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/sleepmultiplechoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="75dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageFilterView">
+
+        <RadioButton
+            android:id="@+id/zeroto3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0 to 3 hours  "
+            android:textSize="48sp" />
+
+        <RadioButton
+            android:id="@+id/fourto6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4 to 6 hours   "
+            android:textSize="48sp" />
+
+        <RadioButton
+            android:id="@+id/sevento9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="7 to 9 hours   "
+            android:textSize="48sp" />
+
+        <RadioButton
+            android:id="@+id/tenplus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="10+ hours"
+            android:textSize="48sp" />
+    </RadioGroup>
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/imageFilterView"
+        android:layout_width="593dp"
+        android:layout_height="304dp"
+        android:layout_marginTop="140dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/sleep" />
+
+    <Button
+        android:id="@+id/sleepsubmitbutton"
+        android:layout_width="300dp"
+        android:layout_height="90dp"
+        android:text="Submit"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sleepmultiplechoice" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

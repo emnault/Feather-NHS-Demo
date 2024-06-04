@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/urine_colour_activity_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A4C2C6"
+    tools:context=".UrineColourActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="1437dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="78dp"
+        android:text="1            2           3           4             5            6           7           8"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/urineSeekBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/submitbutton_urinecolour"
+        android:layout_width="311dp"
+        android:layout_height="84dp"
+        android:layout_marginBottom="36dp"
+        android:text="Submit"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewques"
+        android:layout_width="1000dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="44dp"
+        android:text="What colour is your urine?"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="1270dp"
+        android:layout_height="340dp"
+        android:layout_marginTop="136dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewques"
+        app:srcCompat="@drawable/urine_colour_scale" />
+
+    <SeekBar
+        android:id="@+id/urineSeekBar"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="1185dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:max="7"
+        android:progress="3"
+        app:layout_constraintBottom_toTopOf="@+id/submitbutton_urinecolour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textViewhealthy"
+        android:layout_width="470dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="84dp"
+        android:background="#9986B64E"
+        android:text="Healthy"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/textViewdrinkmore"
+        app:layout_constraintHorizontal_bias="0.946"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewques"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textViewdrinkmore"
+        android:layout_width="787dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="84dp"
+        android:background="#99D55D38"
+        android:text="Drink more"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.71"
+        app:layout_constraintStart_toEndOf="@+id/textViewdrinkmore"
+        app:layout_constraintTop_toBottomOf="@+id/textViewques" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
